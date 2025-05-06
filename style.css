@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Arial', sans-serif;
+
 }
 
 body {
@@ -645,7 +646,7 @@ body {
 
 .benefit i {
   font-size: 32px;
-  color: #1e88e5;
+  color: #02060a;
   margin-bottom: 12px;
 }
 
@@ -715,3 +716,139 @@ body {
   background-color: #004bbd;
 }
 
+.info-section {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 16px;
+  color: #1a1a3d;
+}
+
+h2 {
+  font-size: 1.6em;
+  margin-top: 40px;
+  margin-bottom: 16px;
+  color: #1a1a3d;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #2a2a2a;
+}
+
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+details {
+  border-top: 1px solid #ccc;
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+summary {
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+summary::after {
+  content: "⌄";
+  transition: transform 0.3s;
+}
+
+details[open] summary::after {
+  transform: rotate(180deg);
+}
+
+.links {
+  margin-top: 1rem;
+  columns: 3;
+  column-gap: 2rem;
+}
+
+.links a {
+  display: block;
+  color: #0073e6;
+  text-decoration: none;
+  margin: 0.2rem 0;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+
+
+.footer {
+  background-color: #f7f7f7;
+  padding: 2rem 1.5rem 1rem;
+  color: #333;
+  border-top: 1px solid #ddd;
+  border-radius: 12px 12px 0 0;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #0073e6;
+  margin-bottom: 1.5rem;
+}
+
+.footer-columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-column h4 {
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.footer-column a {
+  display: block;
+  margin-bottom: 0.4rem;
+  text-decoration: none;
+  color: #0073e6;
+  font-size: 0.95rem;
+}
+
+.footer-column a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  border-top: 1px solid #ddd;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  font-size: 0.85rem;
+  color: #555;
+  text-align: center;
+}
