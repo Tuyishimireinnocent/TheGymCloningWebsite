@@ -1,36 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Signup Form</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacation Rentals - Your Home Away From Home | FeWo-direkt</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Header -->
+    <header>
+        <a href="#" class="logo">FeWo-direkt®</a>
+       <!-- Include Font Awesome in the <head> of your HTML -->
 
-  <div class="container">
-    <h2>Signup Form</h2>
-    <form action="#" method="post">
-      <label for="fullname">Full Name</label>
-      <input type="text" id="fullname" name="fullname" required>
 
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" required>
+<nav class="nav-links">
+  <a href="#"> App herunterladen<i class="fas fa-download"></i></a>
+  <a href="#">Reiseplaner</a>
+  <a href="#">Unterkunft Registrieren</a>
+  <a href="#">Hilfe</a>
+  <a href="#">Meine Reisen</a>
+  <a href="#">Anmelden</a>
+</nav>
 
-      <label for="username">Username</label>
-      <input type="text" id="username" name="username" required>
-      <label for="username">Username</label>
-      <input type="text" id="username" name="username" required>
+    </header>
 
-      <label for="password">Password</label>
-      <input type="password" id="password" name="password" required minlength="6">
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>So geht Urlaub.</h1>
+        </div>
 
-      <label for="confirm-password">Confirm Password</label>
-      <input type="password" id="confirm-password" name="confirm-password" required minlength="6">
+        <!-- Search Box -->
+        <div class="search-container">
+            <div class="search-box">
+                <div class="icon">📍</div>
+                <input type="text" placeholder="Wo soll's hingehen?">
+            </div>
+            <div class="search-box">
+                <div>
+                    <span class="label">Daten</span>
+                    <div class="value">17. Mai - 31. Mai</div>
+                </div>
+            </div>
+            <div class="search-box">
+                <div>
+                    <span class="label">Gäste</span>
+                    <div class="value">2 Reisende</div>
+                </div>
+            </div>
+            <button class="search-button">Suchen</button>
+        </div>
+    </section>
 
-      <button type="submit">Sign Up</button>
-    </form>
-  </div>
+    <!-- Login Notification -->
+    <div class="login-notification">
+        <div class="login-notification-text">
+            <div class="login-notification-icon">💬</div>
+            <div>Melde dich an, um dem Gastgeber eine Nachricht zu schicken und mehr Details zu einer Unterkunft zu erhalten.</div>
+        </div>
+        <button class="login-button">Anmelden</button>
+    </div>
 
+
+      <div class="container">
+        <h1>Finde Unterkünfte ganz nach deinem Geschmack</h1>
+        
+        <div class="accommodation-types">
+            <div class="accommodation-card">
+                <img src="/api/placeholder/220/150" alt="Ferienhaus">
+                <div class="accommodation-label">Ferienhaus</div>
+            </div>
+            <div class="accommodation-card">
+                <img src="/api/placeholder/220/150" alt="Ferienwohnung/Apartment">
+                <div class="accommodation-label">Ferienwohnung/Apartment</div>
+            </div>
+            <div class="accommodation-card">
+                <img src="/api/placeholder/220/150" alt="Ferienhütte">
+                <div class="accommodation-label">Ferienhütte</div>
+            </div>
+            <div class="accommodation-card">
+                <img src="/api/placeholder/220/150" alt="Landhaus">
+                <div class="accommodation-label">Landhaus</div>
+            </div>
+            <div class="accommodation-card">
+                <img src="/api/placeholder/220/150" alt="Villa">
+                <div class="accommodation-label">Villa</div>
+            </div>
+        </div>
+        
+        <div class="weekend-offers">
+            <div class="offers-header">
+                <h2>Stöbere in Wochenendtrips</h2>
+                <span class="time-period">Angebote für den Zeitraum: 6. Juni–8. Juni</span>
+            </div>
+            
+            <div class="offers-grid">
+                <div class="offer-card">
+                    <img src="/api/placeholder/220/150" alt="Apartment in Wuppertal">
+                    <div class="offer-content">
+                        <div class="rating">
+                            <span class="rating-score rating-low">2.0</span>
+                            <span class="rating-text">(1 Bewertung)</span>
+                        </div>
+                        <h3 class="offer-title">Stilvolles Apartment direkt an der Uni inkl. Netflix</h3>
+                        <p class="offer-location">Wuppertal, NRW</p>
+                        <p class="offer-price">182 €</p>
+                        <p class="price-per-night">91 € pro Nacht</p>
+                        <p class="price-includes">inkl. Steuern & Gebühren</p>
+                    </div>
+                </div>
+                
+                <div class="offer-card">
+                    <img src="/api/placeholder/220/150" alt="Ferienwohnung in Karlsruhe">
+                    <div class="offer-content">
+                        <div class="rating">
+                            <span class="rating-score rating-good">9.4</span>
+                            <span class="rating-text">Außergewöhnlich (10 Bewertungen)</span>
+                        </div>
+                        <h3 class="offer-title">Nette Ferienwohnung in ruhigem Karlsruher Bergdorf</h3>
+                        <p class="offer-location">Karlsruhe, BW</p>
+                        <p class="offer-price">258 €</p>
+                        <p class="price-per-night">129 € pro Nacht</p>
+                        <p class="price-includes">inkl. Steuern & Gebühren</p>
+                    </div>
+                </div>
+                
+                <div class="offer-card">
+                    <img src="/api/placeholder/220/150" alt="Unterkunft in Hamburg">
+                    <div class="offer-content">
+                        <div class="rating">
+                            <span class="rating-score rating-good">9.8</span>
+                            <span class="rating-text">Außergewöhnlich (139 Bewertungen)</span>
+                        </div>
+                        <h3 class="offer-title">Viele Ausflugsziele z.B. Museumsdorf Wilsede</h3>
+                        <p class="offer-location">Hamburg, HH</p>
+                        <p class="offer-price">274 €</p>
+                        <p class="price-per-night">137 € pro Nacht</p>
+                        <p class="price-includes">inkl. Steuern & Gebühren</p>
+                    </div>
+                </div>
+                
+                <div class="offer-card">
+                    <img src="/api/placeholder/220/150" alt="Apartment in Hannover">
+                    <div class="offer-content">
+                        <div class="rating">
+                            <span class="rating-score rating-outstanding">8.8</span>
+                            <span class="rating-text">Hervorragend (12 Bewertungen)</span>
+                        </div>
+                        <h3 class="offer-title">Stylisches zentrales Apartment mit direktem Wasserblick, Balkon und mehr</h3>
+                        <p class="offer-location">Hannover, NDS</p>
+                        <p class="offer-price">256 €</p>
+                        <p class="price-per-night">128 € pro Nacht</p>
+                        <p class="price-includes">inkl. Steuern & Gebühren</p>
+                    </div>
+                </div>
+                
+                <div class="offer-card">
+                    <img src="/api/placeholder/220/150" alt="Unterkunft in Leipzig">
+                    <div class="offer-content">
+                        <div class="rating">
+                            <span class="rating-score rating-average">4.0</span>
+                            <span class="rating-text"></span>
+                        </div>
+                        <h3 class="offer-title">Kurt-Etage</h3>
+                        <p class="offer-location">Leipzig, Sachsen</p>
+                        <p class="offer-price">670 €</p>
+                        <p class="price-per-night">335 € pro Nacht</p>
+                        <p class="price-includes">inkl. Steuern & Gebühren</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </section>
 </body>
 </html>
